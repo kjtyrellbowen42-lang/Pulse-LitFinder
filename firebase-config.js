@@ -1,16 +1,21 @@
-// Firebase config read from Vercel environment variables
-var firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyAMMNN0n3naog7jaGNqtybtsBg5boU0FVU",
+authDomain: "pulse-litfinder.firebaseapp.com",
+projectId: "pulse-litfinder",
+storageBucket: "pulse-litfinder.firebasestorage.app",
+messagingSenderId: "956030674762",
+appId: "1:956030674762:web:d6aa98ae07ccf1609183b3",
+measurementId: "G-9G96JZG67B"
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// Init Firebase
+const app = initializeApp(firebaseConfig);
 
-var auth = firebase.auth();
-var db = firebase.firestore();
+// Export for your other scripts
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+
