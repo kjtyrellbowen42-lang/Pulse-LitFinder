@@ -3,7 +3,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
-apiKey: "AIzaSyAMMNN0n3naog7jaGNqtybtsBg5boU0FVU",
+apiKey: "AIzaSyAMMN1No3naog7jaGNqtybtsBg5boU0FVU",
 authDomain: "pulse-litfinder.firebaseapp.com",
 projectId: "pulse-litfinder",
 storageBucket: "pulse-litfinder.firebasestorage.app",
