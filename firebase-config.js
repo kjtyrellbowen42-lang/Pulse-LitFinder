@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-window.firebaseConfig = {
+initializeApp(window.firebaseConfig) = {
 apiKey: "AIzaSyAMMN1No3naog7jaGNqtybtsBg5boU0FVU",
 authDomain: "pulse-litfinder.firebaseapp.com",
 projectId: "pulse-litfinder",
